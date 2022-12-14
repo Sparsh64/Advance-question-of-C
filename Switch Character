@@ -1,0 +1,55 @@
+#include<stdio.h>
+#include<conio.h>
+void main()
+{
+int a,b,add,sub,mul,div,c;
+int addition(int,int);
+int subtraction(int,int);
+int multiplication(int,int);
+int division(int,int);
+clrscr();
+printf("\n_______________\n");
+printf("1-addition\n 2-subtraction\n 3-multiplication\n 4-division\n");
+printf("\n_______________\n");
+printf("Enter the index of choice of operation\n");
+scanf("%d",&c);
+printf("Enter Number\n");
+scanf("%d",&b);
+printf("Enter Number\n");
+scanf("%d",&a);
+switch(c)
+{
+  case 1:add=addition(a,b);
+  printf("%d + %d = %d",a,b,add);
+  break;
+  case 2:sub=subtraction(a,b);
+  printf("%d + %d = %d",a,b,sub);
+  break;
+  case 3:mul=multiplication(a,b);
+  printf("%d + %d = %d",a,b,mul);
+  break;
+  case 4:div=division(a,b);
+  printf("%d + %d = %d",a,b,div);
+  break;
+  default:printf("Invalid Input");
+  }
+  getch();
+  }
+     int addition(int a,int b)
+     {
+      return a+b;
+	}
+	int subtraction(int a,int b)
+	{
+	return a-b;
+	}
+	int multiplication(int a,int b)
+	{
+	return a*b;
+	}
+	int division(int a,int b)
+	{
+	return a/b;
+	}
+
+
